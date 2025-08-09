@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CONTACTOS</title>
 </head>
 <body>
-    
+    <center><h1>CONTACTOS</h1></center><hr>
+<style>
+  /* Inputs y textarea */
+  input[type="text"], input[type="email"], textarea {
+      width: 300px;
+      height: 25px;
+  }
+
+  textarea {
+      height: 150px;
+  }
+
+  /* Contenedor de cada campo */
+  .campo {
+      display: flex;
+      align-items: center; /* alinea etiqueta y campo en la misma línea */
+      margin-bottom: 10px;
+  }
+
+  /* Ancho fijo para etiquetas */
+  .campo label {
+      display: inline-block;
+      width: 120px;  /* mismo ancho para todas las etiquetas */
+      text-align: right; /* alineado de texto a la derecha */
+      margin-right: 10px;
+  }
+</style>
+
+<div class="campo">
+  <label for="nombres"><h2>Nombres:</h2></label>
+  <input type="text" id="nombres" name="nombres">
+</div>
+
+<div class="campo">
+  <label for="apellidos"><h2>Apellidos:</h2></label>
+  <input type="text" id="apellidos" name="apellidos">
+</div>
+
+<div class="campo">
+  <label for="email"><h2>E-mail:</h2></label>
+  <input type="email" id="email" name="email">
+</div>
+
+<div class="campo">
+  <label for="comentarios"><h2>Comentarios:</h2></label>
+  <textarea id="comentarios" name="comentarios"></textarea>
+</div>
 </body>
 </html>
